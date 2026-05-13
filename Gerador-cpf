@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerador de CPF</title>
+</head>
+<body>
+
+  <h1>Gerador de CPF</h1>
+
+  <button onclick="gerarCPF()">Gerar CPF</button>
+
+  <h2 id="cpf"></h2>
+
+  <script>
+
+    function gerarCPF() {
+
+      let cpf = "";
+
+      for(let i = 0; i < 11; i++) {
+
+        cpf += Math.floor(Math.random() * 10);
+
+      }
+
+      document.getElementById("cpf").innerText =
+        cpf;
+
+    }
+
+  </script>
+
+</body>
+</html>
